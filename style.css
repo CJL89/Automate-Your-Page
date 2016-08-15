@@ -1,0 +1,107 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+/* General: */
+h1 {
+	font-style: italic;
+	text-decoration: underline;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 16.5px;
+	font-style: italic;
+	margin: 5.5px 5.5px 2.5px 5.5px;
+}
+
+li {
+	font-family: serif;
+	text-indent: 2%;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+ul {
+	letter-spacing: 1px;
+}
+
+pre {
+	background-color: #809980;
+	text-align: left;
+}
+
+
+/* ID: */
+
+#body {
+	background-color: #d7efff;
+	font-family: arial;
+	letter-spacing: 1px;
+}
+
+#footer {
+	/*
+	Took some code from this website: 
+	http://stackoverflow.com/questions/15960290/css-footer-not-displaying-at-the-bottom-of-the-page;
+	The main reason I did is because the footer would be right below "Div Vs. Span" and I wanted to be at the bottom of the page, but could not fiure it out. I hope it is okay!
+	*/
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	font-weight: bold;
+	font-size: 120%;
+	/*
+	How do I make the footer stay at the bottom of the page?
+	*/
+}
+
+
+
+/* Classes: */
+
+.conceptTitle  {
+	background-color: #5fc1ff;
+	border-radius: 20px; /*Borrowed this from the example given, it does look better with a border radious rather than nothing.*/
+	text-align: center;
+	padding: 1px 0 1px;
+	margin: 5px 1px 5px 1px;
+	font-style: italic;
+}
+
+.notesOfConcept {
+	text-align: left;
+	font-style: normal;
+	margin: 1.5%;
+	font-style: italic;
+}
+
+/*#inlineBlock, #divSpan {
+	float: left;
+	width: 49%;
+	margin: 1px 0 50px;
+	text-align: left;
+	font-style: normal;
+	margin: 1.5%;
+}
+
+#divSpan {
+	float: right;
+	width: 50%;
+	text-align: left;
+	font-style: normal;
+	margin: 1.5%;
+}*/
+
+
+
+
+
+

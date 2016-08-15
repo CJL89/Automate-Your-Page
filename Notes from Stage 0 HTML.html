@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Notes from Cesar L. Jaitman Labaton</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="my_code.py">
+	</head>
+
+	<body id="body">
+
+
+<!-- Description of Concepts. -->
+<!-- HTML -->
+
+		<div class="conceptTitle">
+			<h1>NOTES for HTML:</h1>
+				<h2>Definition: HTML makes the structure of a website.</h2>
+			<div class="notesOfConcept">
+				Every HTML file should start with "&lt;!DOCTYPE html&gt;" and wrap all the code within "&lt;html&gt;" <br>
+				Not closing a tag will change the rest of the text to the format that was not closed. Pay attention to opening and closing tags.<br>
+				Structure of an HTML:
+				<pre>
+					<code>
+						&lt;!DOCTYPE HTML&gt;
+						&lt;html&gt;
+						&lt;header&gt;
+							&lt;title&gt; <b>SOME TITLE</b> &lt;/title&gt;
+							&lt;link rel="stylesheet" href="style.css"&gt;
+						&lt;/header&gt;
+						&lt;body&gt;
+							&lt;h1&gt;
+								&lt;p&gt;
+									<b>SOME PARAGRAPH</b>
+								&lt;/p&gt;
+						&lt;/body&gt;
+						&lt;/html&gt;
+					</code></pre>
+				Everything is a BOX, no matter the shape of the image:
+					<ul>
+						<li>Boxes help organize the structure of the website easily and rearrange them if needed.</li>
+					</ul>
+				<b>Front-End Web development:</b> shows the result of the code instantly.<br>
+				<b>Structure:</b> HTML code usually follow a tree-like structure. As seen before in the example structure of HTML; code is written within a bigger structure that goes to a smaller element, or better called a parent element where they have several child elements.<br>
+				<b>Indentation:</b> even though not necessary for a program to work and is ignored by a computer; indentation has to be one of the most important elements in writing and reading code. As explained before in how structure works, indentation helps mark the different child elements that a parent has, by making it easier to view the different elements and how big a parent element can be.<br>
+				<b>Repetition:</b> do NOT repeat code if it can be avoided! Repetition can lead to mistakes. The more code I write, the higher the probability of making a mistake or mistyping something that will make the program or website to crash. Use ID's, classes or other tools to avoid repetition and apply the same formats to different groups of texts.<br>
+				Use <b>Google Chrome</b> for Developer tools to understand the inner structure of a website.<br>
+				<b>"&lt;Style&gt;"</b> can be used to edit elements directly in HTML but is not considered good practice.<br>
+			</div>
+		</div>
+
+
+<!-- CSS -->
+
+		<div class="conceptTitle">
+			<h1>NOTES for CSS:</h1>
+				<h2>Definition: configures the style of the website by changing the color, fonts, etc. of the different objects that are presented in the HTML.</h2>
+			<div class="notesOfConcept">
+				Adding style to HTML, there are 3 ways:
+					<ul>
+						<li>Linking a separate CSS file to the HTML: 
+					</ul>
+					<pre>
+						<code>
+							<em>&lt;head&gt;</em>
+								<em>&lt;link&gt; rel="stylesheet" type="text/css" href="style.css"</em>
+							<em>&lt;/head&gt;</em>
+						</code></pre>
+					<ul>
+						<em>Make sure that the files are in the same folder, otherwise it won't work or specify where the file is located.</em></li>
+						<li>Writing the CSS in the HTML through "&lt;style&gt;"</li>
+						<li>Writing the CSS inline with the HTML code is considered bad practice and leads to repeated coding. Not repeating code will allow us to write less code that can be less confusing.</li>
+					</ul>
+				<b>Font-Style:</b> modifies ONLY to normal, italics, oblique (not sure what the difference between oblique and italics is?)<br>
+				<b>Font-Weight:</b> modifies ONLY to normal, bold, lighter, bolder, and numeric values of boldness.<br>
+				<b>Classes:</b> to call a class in CSS, the element should be opened with ".". They can call a group of elements.<br>
+				<b>ID:</b> to call an ID in CSS, the element should be opened with"#". ID is an unique identifier of a HTML element.<br>
+				<b>Selectors:</b> are the component that you use to select or target a specific element in a HTML document.<br>
+				<b>Box-sizing:</b> keeps the size of the boxes:
+					<pre>
+						<code>
+							&lt;-webkit-box-sizing: border-box;&gt;
+							&lt;-moz-box-sizing: border-box;&gt;
+							&lt;-ms-box-sizing: border-box;&gt;
+							&lt;box-sizing: border-box;&gt;
+						</code></pre>
+				Set sizes to percentages rather than pixels since they can adjust to the screen size rather than a set of specific numbers.<br>
+				Set the box-size = border-box.<br>
+				Setting the display to <em>"display: flex"</em> will make the boxes of a DIV to appear next to each other horizontally rather than having everything lined up in a vertical way.
+			</div>
+		</div>
+
+
+<!-- Computer Programming -->
+
+		<div class="conceptTitle">
+			<h1>Notes for Computer Programming:</h1>
+				<h2>Definition: computers by itself cannot do much, unless a program is introduced and tells the computer what to do. A program uses the different components that a computer has available to perform the different commands that a program gives.</h2>
+				<div class="notesOfConcept">
+				</div>
+		</div>
+
+
+<!-- Python -->
+
+		<div class="conceptTitle">
+			<h1>Notes for Python:</h1>
+				<h2>Definition: a programming language that enables computers to do specific commands in few lines of code. The main reason computer languages are created is because they serve a specific purpose and have specific commands; whereas normal languages (English, Spanish, Danish, etc.) can contain certain ambiguity that might confuse the computer or send a command that was not desired.</h2>
+			<div class="notesOfConcept">
+
+
+					<!-- General Concepts -->
+
+					<b>Python Interpreter:</b> converts the code written by the programmer so that the computer can execute the commands.<br>
+					<b>Python Expression:</b> a correct or legal Python statement that the interpreter is able to understand and execute. Incorrect expressions will lead to syntax errors and the program to crash.<br>
+					<b>Print:</b> will display what we wrote in the command line in the console after we run the program.<br>
+					<b>Grammar:</b> has to be very specific. If code is written that does not follow the python grammar, then it give us a <em>syntax error.</em><br>
+					<b>Parameters:</b> words or letters that go inside parentheses in a procedure and method. Within parameters you find inputs, operands or arguments.<br>
+					<b>General Solutions:</b> code that can be applied to different situation no matter the whether the content changes inside the string.<br>
+					<b>Specific Solutions:</b> code that only applies to the text written. Changes of a variable or string will affect the code and most likely changes will have to be applied.<br>
+					<b>Abstraction:</b> the function of a computer when we call a specific module, function, or any other precedure or element without the coder actually specifying what it is being called.<br>
+					<b>Classes:</b> contain several modules within and makes it easy to call different modules instead of writing several lines of code (eg: cookbook with receipes. The recipes is a class, since through a recipe different things can be done, but there is a standard followed).<br>
+					<b>Built-In Functions:</b> a function that is commonly used and does not need to be imported. For this reason, we can write the function without the import portion.<br>
+					<b>Import:</b> as the name suggests, it calls in a specific function from the python library. Commonly, functions that need to be imported are not typically used in a daily basis.<br>
+
+
+					<!-- Modules -->
+					<b>Modules:</b> is a collection of different variables or functions that makes it easier to use Python, since with a few letters we can ask the computer to perform a specific task, instead of writing a whole procedure. There are different modules:
+					<ul>
+
+
+						<!-- Turtle Modules -->
+						<li><b>Turtle:</b> is a graphic module that can be used to draw different elements on a computer screen.<br></li>
+							<ul>
+							 <li><b>window:</b> creates a window where the graphic can be seen.</li>
+							 <li><b>bgcolor:</b> changes the color of the background in the window.</li>
+							 <li><b>turtle.Turtle():</b> calling the function turtle, so the graphic is created.</li>
+							 <li><b>str.shape:</b> edits the shape of the avatar. The default is just and arrow.</li>
+							 <li><b>str.color:</b> modifies the color of the avatar.</li>
+							 <li><b>str.speed:</b> modifies how fast the avatar will move in the window.</li>
+							 <li><b>str.forward():</b> how far the avatar will go in the window.</li>
+							 <li><b>str.rigth/left():</b> direction in which the avatar will go.</li>
+							</ul>
+
+
+						<!-- OS Modules -->
+						<li><b>OS Modules:</b>
+							<ul>
+								<li><b>os.listdir():</b> marks where a certain folder or file is. However, is does NOT change the directory that python is working at. The code for <em>listdir()</em> is:</li>
+							</ul>
+						</li>
+					</ul>
+							<pre>
+								<code>
+									os.listdir("<b>path of file</b>")
+								</code></pre>
+					<ul>
+							<ul>
+								<li><b>os.getcwd():</b> marks the current directory or folder in which Python is working at. The code for <em>getcwd()</em> is:</li></li>
+							</ul>
+					</ul>
+							<pre>
+								<code>
+									os.getcwd()
+								</code></pre>
+					<ul>
+							<ul>
+								<li><b>os.chdir():</b> changes the directory or folder in which Python is working at after being specifying a new directory. The code for <em>chdir()</em> is:</li>
+							</ul>
+					</ul>
+							<pre>
+								<code>
+									os.listdir("<b>path of new directory</b>")
+								</code></pre>
+					<ul>
+							<ul>
+								<li><b>str.translate():</b> removes some character of the names of the file/s that are found in the directory that Python is working at <em>(in Python 3 writing "None" will not work anymore since it uses Unicodes)</em>. The code for <em>str.translate()</em> is:</li>
+							</ul>
+					</ul>
+							<pre>
+								<code>
+									str.translate(None, "<b>characters that we do not want to include</b>")
+								</code></pre>
+					<ul>
+							<ul>
+								<li><b>os.rename(src, dst):</b> changes the name of the file/s that are found in the cirectory that Python is working at. The code for <em>os.rename()</em> is:</li>
+							</ul>
+					</ul>
+							<pre>
+								<code>
+									os.rename(<b>src</b>, <b>dst</b>)
+								</code></pre>
+						</li>
+					</ul>
+
+
+					<!-- Variables -->
+					<b>Variables:</b> stored location associated with a specific name. They also can vary on value.
+						<ul>
+							<li><b>Variables</b> are composed of: <em>name = expression</em></li>
+							<li>The equal sign <b>"="</b> means assignment.</li>
+							<li>Variables can be multiplied and concatenated but <b>CANNOT</b> be concatenated with strings and variables in the same line of code.</li>
+						</ul>
+
+
+					<!-- Category for String/Lists -->
+
+					<b>Structured Data:</b> can be divided into two different categories:
+					<ul>
+
+
+						<!-- Strings -->
+
+						<li><b>Strings:</b> a way of storing a sequence of characters between quotes "" ''. In order for a string to work, it has to start and end with the same quote. Also, another string can be used in another string "'" '"'.
+							<ul>
+								<li><b>Indexing String:</b> strings can be selected by a specific letter or expression through the [#]. <b>ALWAYS</b> start from 0 since computers start counting from that number!</li>
+								<li><b>Concatenation:</b> the linking of 2 or more strings, but it <b>CANNOT</b> be multiplied.</li>
+								<li><b>Sub-Sequences:</b> strings can also be selected by a group of letter or words by using [#:#]. <b>ALWAYS</b> start from 0, if trying to select the first word!</li>
+								<li><b>Finding a String:</b> specific strings can be found through the method .find(<em>string</em>). If the string that is been searched is found, then it will give the number location within the entire string. In the case that .find does NOT find the string searched, it will give an output of <b>-1</b>. It can also have 2 parameters <em>.find(#, #)</em>, where the second parameter specifies the program to start looking from the specified location. This can omit certain letters from a string or words.</li>
+								<li><b>Edge Case:</b> an empty string where there are no characters and the interpreter returns an error.</li>
+								<li><b>Append:</b> adds another element</li>
+							</ul>
+						</li>
+					</ul>
+
+
+						<!-- List -->
+
+						<li><b>List:</b> a sequence that can store anything, including characters, integers, even another lists (also known as <b>Nested Lists</b>).</li>
+						<ul>
+							<li><b>List Operations:</b></li>
+								<ul>
+									<li><b>Append:</b> adds another sequence to the list mutating the overall list.</li>
+								</ul>
+						</ul>
+						<pre>
+							<code>
+							 <b>&lt;variable/string&gt;</b>.append(&lt;<b>statement</b>&gt;)
+						</code></pre>
+						<ul>
+								<ul>
+									<li><b>+:</b> concatonates the list with 2 or more lists.</li> 
+								</ul>
+						</ul>
+
+
+					<!-- Function -->
+
+					<b>Procedures/Functions:</b> a method that takes inputs as the parameters and outputs the different results that have been inputed within the parameters. The syntax for a function is:
+						<pre>
+							<code>
+								def <b>&lt;procedure&gt;</b>(&lt;<b>parameters</b>&gt;):
+									&lt;<b>statements</b>&gt;
+									return &lt;<b>statements</b>&gt;
+							</code></pre>
+						<ul>
+							<li><b>Inputs:</b> are arguments that are introduced to a method or procedure in order for it to perform a specif task.</li>
+							<li><b>Outputs:</b> are the results of the different inputs that were introduced to method of procedure.</li>
+							<li><b>Return:</b> will give us an output, otherwise the function or procedure wont display anything. This does NOT mean that the function does not work.</li>
+							<li><b>Making a Function:</b> can be considered the section where the inputs will go and analyze the data.</li>
+							<li><b>Using a Function:</b> also called calling a function, where the procedure is initialed and an output is expected.</li>
+							<li><b>Repetition:</b> functions can be used several times and give different outputs depending on the inputs. However, if the structure of the function is not changed.</li>
+							<li><b>If-Else:</b> a type of procedure or function that tests the expressions inputed and finds out whether an input is true or false, and can also take more than 2 inputs. the structure of an If-Else procedure is:</li>
+						</ul>
+						<pre>
+							<code>
+							def <b>&lt;procedure&gt;</b>(&lt;<b>parameters</b>&gt;):
+								if &lt;<b>statements</b>&gt;:
+									return &lt;<b>statements</b>&gt;
+								else &lt;<b>statements</b>&gt;:
+									return &lt;<b>statements</b>&gt;
+						</code></pre>
+						<ul>
+							<li><b>.find:</b> is a method to locate a specific word or number whitin a string. The structure of find is:</Li>
+						</ul>
+						<pre>
+							<code>
+								<b>&lt;statement&gt;</b>.find[#:#]
+							</code></pre>
+						<ul>
+							<li><b>Indentation in Procedures:</b> have to be followed in specific orders or the interpreter will return an error.</li>
+							<li><b>Len:</b> gives the number of elements found in the input. It also counts the outer elements. The syntax for len is:</li>
+						</ul>
+						<pre>
+							<code>
+								len(<b>&lt;list&gt;</b>)
+							</code></pre>
+
+
+					<!-- Operators -->
+
+					<b>Operators:</b> offer different inputs to manipulate the prcedure in different ways.
+						<ul>
+							<li><b>OR:</b> if either one of the statemenst proves to be true, the function will run; but if both of them prove false, the function will not run.</li>
+							<li><b>AND:</b> in order for the procedure to run, both statements have to be true.</li>
+							<li><b>&gt;:</b> if a statement is bigger than another.</li>
+							<li><b>&lt;:</b> if a statement is smaller than another.</li>
+							<li><b>==:</b> if both statements are equal to each other.</li>
+							<li><b>!>:</b> if both statements are <b>NOT</b> equal to each other.</li>
+							<li><b>&gt;=;</b> if a statement is bigger <b>AND/OR</b> equal to another.</li>
+						</ul>
+
+
+					<!-- Loops/For/While -->
+
+					<b>Loops:</b> a method that allows us to do something over and over again as long as the text expression is true. If the test expression is false, the loop will stop.<br>
+						<ul>
+							<li><b>While:</b> a type of procedure that executes until the conditions is false. The format of a while loop is:</li>
+						</ul>
+						<pre>
+							<code>
+								while <b>&lt;test expression&gt;</b>:
+									<b>&lt;statements&gt;</b>
+							</code></pre>
+						<ul>
+							<li><b>Break:</b> a way to stop a loop after a statement is achieved. The syntax for break is:</li>
+						</ul>
+						<pre>
+							<code>
+								def <b>&lt;procedure&gt;</b>(&lt;<b>parameters</b>&gt;):
+									while <b>&lt;test expression&gt;</b>:
+										<b>&lt;statements&gt;</b>
+									if &lt;<b>statements</b>&gt;:
+										return &lt;<b>statements</b>&gt;
+										break
+									else &lt;<b>statements</b>&gt;:
+										return &lt;<b>statements</b>&gt;
+							</code></pre>
+						<ul>
+							<li><b>For:</b> a loop that goes throught the element and returns what if stated in the block. For loops do not run on an infinite way.</li>
+							<li><b>Indexing:</b> there are 3 ways to index a look for a specific element: </li>
+							<ul>
+								<li> If <b>&lt;value&gt;</b> is found in the <b>&lt;list&gt;</b>, then it returns the first position of the <b>&lt;value&gt;</b>; otherwise it returns an error. The syntax of this index is: </li>
+							</ul>
+						</ul>
+						<pre>
+							<code>
+								<b>&lt;list&gt;</b>.index(<b>&lt;value&gt;</b>)
+							</code></pre>
+						<ul>
+							<ul>
+								<li>If <b>&lt;value&gt;</b> is found in the <b>&lt;list&gt;</b>, output is True; otherwise it is False. The syntax of this index is:</li>
+							</ul>
+						</ul>
+						<pre>
+							<code>
+								<b>&lt;value&gt;</b> in <b>&lt;list&gt;</b>
+							</code></pre>
+						<ul>
+							<ul>
+								<li>If <b>&lt;value&gt;</b> is NOT found in the <b>&lt;list&gt;</b>, output is True; otherwise it is False. The syntax of this index is:</li>
+							</ul>
+						</ul>
+						<pre>
+							<code>
+								<b>&lt;value&gt;</b> not in <b>&lt;list&gt;</b>
+							</code></pre>
+						<ul>
+							<li><b>Infinite Loop:</b> a loop that will never stop working because a test condition is not achieved.</li>
+						</ul>
+					<b>Debugging:</b> an important part of coding is recognizing the mistakes and understanding the messages that the console gives you. However, some times the console is not too clear when it highlights that something went wrong.There are many approaches to find out what went wrong, such as editing small portions of the code to find out specifically where it crashed, comment portions of the code so the entire code does not run at the same time, include print statements so we can figure out if the code is doing what we ask for it to do.<br>
+
+
+					<!-- Inportant People -->
+
+					<b>John Backus:</b> (1924-2007) lead designer of Fortran programming language.
+						<ul>
+							<li>Backus-Naur Form: non-terminal -> replacement</li>
+							<li>Sentence -> Subject Verb Object</li>
+							<li>Subject -> Noun</li>
+							<li>Object -> Noun</li>
+							<li>Verb -> <em>Word</em></li>
+						</ul>
+					<b>Augusta Ada King:</b> (1815-1852) first person to think of programming a computer to do something other than arithmetic.
+					<b>Grace Hooper:</b> (1906-1992) inventor of Kubol, programming language.<br>
+					<b>Alan Turing:</b> (1912-1954) considered the father of computer science and A.I.; was able to decode the Enigma Code used by the Nazis during the WWII.<br>
+			</div>
+		</div>
+
+
+<!-- DOM -->
+
+		<div class="conceptTitle">
+			<h1>NOTES for DOM (Document Object Model):</h1> 
+				<h2>Definition: a cross-platform and language that interacts with objects from a HTML, XHTML, XML documents.</h2>
+			<div class="notesOfConcept">
+				<ul>
+					<li>They are organized in a tree-like structure like HTML.</li>
+				</ul>
+			</div>
+		</div>
+
+
+<!-- Inline Vs. Block -->
+
+		<div class="conceptTitle">
+			<h1>Inline Vs. Block:</h1>
+			<div class="notesOfConcept">
+			  <b>Inline:</b> Elements that take over one line.<br>
+			  <b>Blocks:</b> Elements that are invisibly encircled
+			   <ul>
+					<li>"&lt;em&gt;" Italics is an inline.</li>
+					<li>"&lt;b&gt;" Bold is an inline.</li>
+					<li>"&lt;img src="" alt=""&gt;" Images is an inline.</li>
+					<li>"&lt;br&gt;" Break is an inline.</li>
+					<li>"&lt;p&gt;" Paragraph is a block.</li>
+					<li>"&lt;span&gt;" Span is an inline. Keeps everything within a line with no format.</li>
+					<li>"&lt;div&gt;" Div is a block. Good to group multiple elements.</li>
+				</ul>
+			</div>
+		</div>
+
+
+<!-- Div Vs. Span -->
+
+		<div class="conceptTitle">
+			<h1>Div Vs. Span:</h1>
+			<div class="notesOfConcept">
+				<b>Div:</b> defines a section or division in a HTML. It is a block element! They also take the entire width of the web page.<br>
+				<b>Span:</b> provides a way to add a hook to a part of a text or a part of a document. It is a inline element!
+				<!-- Definition copied directly from http://www.w3schools.com/tags/tag_span.asp.-->
+			</div>
+		</div>
+
+	<footer id="footer">
+		<a href= "http://www.w3schools.com/"> Good reference for any questions!</a>
+	</footer>
+
+	</body>
+</html>
